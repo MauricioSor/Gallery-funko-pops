@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&family=Unbounded:wght@900&display=swap");
+
+* {
+    padding: 0px;
+    border: 0px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background: linear-gradient(to right,
+            rgb(35, 55, 239),
+            rgb(94, 25, 179),
+            rgb(212, 104, 122));
+    padding: 50px;
+    max-height: max-content;
+    width: 100%;
+    text-align: center;
+}
+
+nav a {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-family: "Unbounded", cursive;
+    font-size: 50px;
+    color: aliceblue;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer {
+    background-color: black;
+    padding: 10px;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+#contenedorDeFunkos {
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cajaFunko {
+    margin: 10px;
+}
+
+.cajaFunko img {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px 3px black;
+    filter: grayscale(85%);
+}
+
+img:hover {
+    filter: grayscale(0%);
+    transition: 700ms;
+}
+
+@media screen and (max-width: 820px) {
+    #divletras a {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    #Portada {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    body {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
